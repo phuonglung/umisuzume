@@ -6,12 +6,25 @@
 <head>
 
     <title>【落ち椿｜｜OCHITSUBAKI】</title>
-    <link rel="shortcut icon" type="image/jpg" href="https://github.com/feyxuan/OCHITSUBAKI/blob/main/favicon-2.png?raw=true"/>
+    <link rel="shortcut icon" type="image/jpg" href="https://github.com/feyxuan/OCHITSUBAKI/blob/main/favicon-2.png?raw=true.jpg"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
 
+    <script>
+      function w3_open() {
+        document.getElementById("start").style.display = 'none';
+        document.getElementById("main").style.marginLeft = "none";
+        document.getElementById("mySidebar").style.width = "none";
+        document.getElementById("mySidebar").style.display = "block";
+      }
+      function w3_close() {
+        document.getElementById("start").style.display = 'block';
+        document.getElementById("main").style.marginLeft = "0";
+        document.getElementById("mySidebar").style.display = "none";
+      }
+    </script>
 </head>
 
 <style>
@@ -137,8 +150,9 @@ abc {
       <!--***************************************************-->
       <!-- Side Navigation - will be under a hamburger menu -->
       <!--***************************************************-->
-      <nav>
+      <nav style="display:none" id="mySidebar">
           <h2>MENU</h2>
+          <button onclick="w3_close()">CLOSE </button>
           <a href="#about">ABOUT</a>
           <a href="#characters">CHARACTERS</a>
           <a href="#gamedev">GAMEDEV</a>
@@ -148,7 +162,7 @@ abc {
       <!-- Main container for all site content -->
       <!--*************************************-->
       <div id="main">
-
+          <p id ="start" onclick="w3_open()">&#9776; </p>
 
 
           <!--************************************************************* -->
@@ -187,15 +201,28 @@ abc {
           <div id="characters">
           <div>
               <h1>CHARACTERS</h1>
-              <abc href="characters">
               <!-- Actual copy -->
+              <div>
+              <img src="https://github.com/feyxuan/OCHITSUBAKI/blob/main/hanashiro-retro.png?raw=true" style="float: left; padding: 2%";>
+            </div>
+              <abc href="characters">
               <div>【花白】Hanashiro (White flowers): <i> The only thing I have left is to die. </i></div>
-              <p></p>
-              <div>【白菊】Shiragiku (White chrysanthemum): <i>  </i>'I have nothing but life left.'</div>
-              <p></p>
+              <br>
+              <div>【白菊】Shiragiku (White chrysanthemum): <i>'I have nothing but life left.' </i></div>
+              <br>
               <div>【白百合】Shirayuri (White lily): <i> 'Who are you? Have we met before?'</i></div>
-              <p></p>
+              <br>
               </abc>
+              <div>
+              <br>
+              <img src="https://github.com/feyxuan/OCHITSUBAKI/blob/main/lk-retro.png?raw=true" style="float:left; padding: 2%";>
+              <br><br>
+            </div>
+            <p></p>
+              <abc>
+              <div>【ルン・胡蝶蘭】Lun Kochouran (Lune Moth Orchid): <i> Names are such funny things, aren't they? </i> </div>
+              <br>
+            </abc>
           </div>
         </div>
 
