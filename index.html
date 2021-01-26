@@ -9,8 +9,9 @@
     <link rel="shortcut icon" type="image/jpg" href="https://github.com/feyxuan/OCHITSUBAKI/blob/main/favicon-2.png?raw=true.jpg"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet">
+    <link rel="stylesheet" href="css/w3.css">
     <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+
 
     <script>
       function w3_open() {
@@ -27,124 +28,15 @@
     </script>
 </head>
 
-<style>
-
-h2 {
-  background-color: rgba(0, 0, 0, 0.5);
-  border: none;
-  color: white;
-  padding: 15px 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size:20px;
-  font-family: Kosugi Maru, sans-serif;
-}
-html,body {
-
-  background-image: url('https://github.com/feyxuan/OCHITSUBAKI/blob/main/BG-2.png?raw=true'); style="width: 100%; height: 100%; margin: 0px; padding: 0px; overflow-x: hidden;"
-  background-repeat: repeat;
-  font-size: 14pt;
-  font-family: Kosugi Maru, sans-serif;
-  color: white;
-
-}
-
-button {
-  background-color: rgba(247, 104, 252, 0.5);
-  border: none;
-  color: white;
-  padding: 15px 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size:20px;
-  font-family: Kosugi Maru, sans-serif;
-}
-
-a:link {
-  background-color: rgba(247, 104, 252, 0.5);
-  border: none;
-  color: white;
-  padding: 15px 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size:20px;
-  font-family: Kosugi Maru, sans-serif;
-}
-
-a:visited {
-  background-color: rgba(116, 49, 140, 0.5);
-  border: none;
-  color: white;
-  padding: 15px 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size:20px;
-  font-family: Kosugi Maru, sans-serif;
-}
-
-a:hover {
-  background-color: rgba(247, 104, 252, 0.5);
-  border: none;
-  color: purple;
-  padding: 15px 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size:20px;
-  font-family: Kosugi Maru, sans-serif;
-}
-
-a:active {
-  background-color: rgba(247, 104, 252, 0.5);
-  border: none;
-  color: white;
-  padding: 15px 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size:20px;
-  font-family: Kosugi Maru, sans-serif;
-}
-
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#text {
-  margin-left: 200px;
-  margin-right: 200px;
-  margin-top: 20px;
-
-}
-
-
-
-abc {
-  display: inline-block;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding-left: 15px; /*sets 'padding'*/
-  padding-right: 15px; /*sets 'padding'*/
-  padding-top: 15px;
-}
-
-
-</style>
-
 
 <body>
 
     <!--******************-->
     <!-- Header container -->
     <!--******************-->
-    <header>
+    <div id="header">
         <img src="https://github.com/feyxuan/OCHITSUBAKI/blob/main/HEADER.png?raw=true" alt="ochitsubaki" style="width:1100px;height:122px; padding:80px;">
-    </header>
+    </div>
 
     <div id= "text">
       <!--***************************************************-->
@@ -168,7 +60,7 @@ abc {
           <!--************************************************************* -->
           <!--**** Container for Banner data - called "main-offers"  ***** -->
           <!--************************************************************* -->
-          <div id="about">
+          <div id="about" class="w3-container w3-cell-row w3-margin-top w3-margin-bottom">
 
               <!-- Container for ABOUT part of banner -->
               <div>
@@ -199,32 +91,50 @@ abc {
           <!--**** Container for Cruises data ***** -->
           <!--************************************* -->
           <div id="characters">
-          <div>
               <h1>CHARACTERS</h1>
-              <!-- Actual copy -->
-              <div>
-              <img src="https://github.com/feyxuan/OCHITSUBAKI/blob/main/hanashiro-retro.png?raw=true" style="float: left; padding: 2%";>
-            </div>
-              <abc href="characters">
-              <div>【花白】Hanashiro (White flowers): <i> The only thing I have left is to die. </i></div>
-              <br>
-              <div>【白菊】Shiragiku (White chrysanthemum): <i>'I have nothing but life left.' </i></div>
-              <br>
-              <div>【白百合】Shirayuri (White lily): <i> 'Who are you? Have we met before?'</i></div>
-              <br>
-              </abc>
-              <div>
-              <br>
-              <img src="https://github.com/feyxuan/OCHITSUBAKI/blob/main/lk-retro.png?raw=true" style="float:left; padding: 2%";>
-              <br><br>
-            </div>
-            <p></p>
-              <abc>
-              <div>【ルン・胡蝶蘭】Lun Kochouran (Lune Moth Orchid): <i> Names are such funny things, aren't they? </i> </div>
-              <br>
-            </abc>
-          </div>
-        </div>
+            <table>
+              <tr><td style=""><img src="https://github.com/feyxuan/OCHITSUBAKI/blob/main/hanashiro-retro.png?raw=true" style="float: left; padding: 5%";>
+                  <br><br>【花白】Hanashiro (White flowers):
+                  <br> <br> <i> A selection from THE BITTERWILD CANTOS: SEPTUM </i>
+                  <br> <br> <b> DO NOT TRUST
+                  <br> those who say they will live forever,
+                  <br> only those who remember.</b>
+                  <br><br><br>
+                </td>
+                <td><img src="https://github.com/feyxuan/OCHITSUBAKI/blob/main/lk-retro.png?raw=true" style="float:left; padding: 5%";>
+                <br><br>【ルン・胡蝶蘭】Lun Kochouran (Lune Moth Orchid):
+                <br> <br> <i> A selection from THE BITTERWILD CANTOS: DUO </i>
+                <br> <br> <b> DEERSKIN SLANDER
+                <br> With your deerskin gloves,
+                <br> love, with your deerskin gloves,
+                <br> remember those who will not for us
+                <br> have any remembering of. </b>
+              </td>
+              </tr>
+              <tr>
+                <td><img src="https://github.com/feyxuan/OCHITSUBAKI/blob/main/win-oops-logo.png?raw=true" style="float:left; padding: 5%";>
+                <br><br>【白菊】Shiragiku (White chrysanthemum):
+                <br> <br> <i> A selection from THE BITTERWILD CANTOS: TRES </i>
+                <br><br> <b> A lady that sires,
+                <br> A lady undenied,
+                <br> Who keeps the time.
+                <br><br>
+                <br> And keeps us all in line.
+                <br> And keeps us all in line.
+              </b>
+                </td>
+                <td><img src="https://github.com/feyxuan/OCHITSUBAKI/blob/main/win-oops-logo.png?raw=true" style="float:left; padding: 5%";>
+                <br><br>【白百合】Shirayuri (White lily):
+                <br> <br> <i> A selection from THE BITTERWILD CANTOS: DUO </i>
+                <br><br><b> Remember the birds:
+                <br>SWALLOW, SWAN, SHRIKE,
+                <br><br>
+                <br> Tonight, tonight
+                <br> Never forget, for they will
+                <br> remember you.
+                </td>
+              </tr>
+            </table>
 
       </div>
           <div id="gamedev">
