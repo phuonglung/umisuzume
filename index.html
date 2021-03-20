@@ -6,12 +6,11 @@
 <head>
 
     <title>【落ち椿｜｜OCHITSUBAKI】</title>
-    <link rel="shortcut icon" type="image/jpg" href="https://github.com/feyxuan/OCHITSUBAKI/blob/main/favicon-2.png?raw=true.jpg"/>
+    <link rel="shortcut icon" type="image/jpg" href="https://github.com/feyxuan/swayofseven/blob/main/favicon.png?raw=true"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/w3.css">
-    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@800&display=swap" rel="stylesheet">
 
     <script>
       function w3_open() {
@@ -28,26 +27,159 @@
     </script>
 </head>
 
+<style>
+
+h2 {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #3d5e45;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size:20px;
+  font-family: 'Shippori Mincho', serif;
+}
+html,body {
+
+  background-image: url('https://github.com/feyxuan/swayofseven/blob/main/bg-long.png?raw=true'); style="width: 100%; height: 100%; margin: 0px; padding: 0px; overflow-x: hidden;"
+  background-repeat: repeat;
+  font-size: 14pt;
+  font-family: 'Shippori Mincho', serif;
+  color: #3d5e45;
+  text-align: center;
+}
+
+button {
+  background-color: rgba(247, 104, 252, 0.5);
+  border: none;
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size:20px;
+  font-family: 'Shippori Mincho', serif;
+}
+
+a:link {
+  background-color: rgba(247, 104, 252, 0.5);
+  border: none;
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size:20px;
+  font-family: 'Shippori Mincho', serif;
+}
+
+a:visited {
+  background-color: rgba(54, 71, 54, 0);
+  border: none;
+  color: black;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size:20px;
+  font-family: 'Shippori Mincho', serif;
+}
+
+a:hover {
+  background-color: rgba(54, 71, 54, 0.5);
+  border: none;
+  color: gold;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size:20px;
+  font-family: 'Shippori Mincho', serif;
+}
+
+a:active {
+  background-color: rgba(54, 71, 54, 0.5);
+  border: none;
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size:20px;
+  font-family: 'Shippori Mincho', serif;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#text {
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 20px;
+
+}
+
+abc {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding-left: 15px; /*sets 'padding'*/
+  padding-right: 15px; /*sets 'padding'*/
+  padding-top: 15px;
+}
+
+.column {
+float: center;
+width: 50%;
+font-size: 14pt;
+font-family: 'Shippori Mincho', serif;
+color: #3d5e45;
+display: inline-block;
+background-color: rgba(255, 255, 255, 0.5);
+padding-left: 15px; /*sets 'padding'*/
+padding-right: 15px; /*sets 'padding'*/
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+font-size: 14pt;
+font-family: 'Shippori Mincho', serif;
+color: #3d5e45;
+display: inline-block;
+padding-left: 15px; /*sets 'padding'*/
+padding-right: 15px; /*sets 'padding'*/
+padding-top: 15px;
+
+
+}
+
+</style>
+
+
 
 <body>
+
 
     <!--******************-->
     <!-- Header container -->
     <!--******************-->
-    <div id="header">
-        <img src="https://github.com/feyxuan/OCHITSUBAKI/blob/main/HEADER.png?raw=true" alt="ochitsubaki" style="width:1100px;height:122px; padding:80px;">
-    </div>
+    <header>
+        <img src="https://raw.githubusercontent.com/feyxuan/swayofseven/main/GOLDEN-HEADER.png" alt="ochitsubaki" style="width:1100px;height:122px; padding:80px;">
+    </header>
 
-    <div id= "text">
+    <div id="text">
       <!--***************************************************-->
       <!-- Side Navigation - will be under a hamburger menu -->
       <!--***************************************************-->
-      <nav style="display:none" id="mySidebar">
+      <nav style="display:none" id="mySidebar" "text-align: left">
           <h2>MENU</h2>
           <button onclick="w3_close()">CLOSE </button>
-          <a href="#about">ABOUT</a>
-          <a href="#characters">CHARACTERS</a>
-          <a href="#gamedev">GAMEDEV</a>
+          <a href="#teardew">ABOUT</a>
       </nav>
 
       <!--*************************************-->
@@ -60,124 +192,51 @@
           <!--************************************************************* -->
           <!--**** Container for Banner data - called "main-offers"  ***** -->
           <!--************************************************************* -->
-          <div id="about" class="w3-container w3-cell-row w3-margin-top w3-margin-bottom">
-
-              <!-- Container for ABOUT part of banner -->
-              <div>
-                  <h1>ABOUT</h1>
-                  <!-- Actual copy -->
-                  <abc href="about">
-                  <p>『落ち椿｜｜OCHITSUBAKI』 is a game about how language dies. Ochitsubaki, "fallen camellia," refers to how Japanese camellia flowers fall from the stem whole. It was historically a symbol for beheading.
-                  <br>
-                  <br>
-                  <b>[SUICIDAL IDEATION TW]</b>
-                  <br>
-                  <br>
-                  【花白】Hanashiro (White flowers), 【白百合】Shirayuri (White lily), and 【白菊】Shiragiku (White chrysanthemum) are all characters in OCHITSUBAKI who react differently to being immortal and witnessing the apocalypse over and over again in different cycles of reincarnation. They are 天百合 (Amayuri), which translates to HEAVENLY LILY, and in some cycles were known as 悪しき花, FLOWERS OF EVIL, but always holy. They speak in a fairy tongue that has been lost to the KINGDOM OF UNEARTH.
-                  <br><br>
-                  Shiragiku is unfazed and cheery and flippant and whimsical and capricious; Shirayuri is nowhere to be found; and Hanashiro? Hanashiro is planning on their death in 10 years, when the camellias fall. Hanashiro and Shirayuri have witnessed THE END OF THE WORLD before. But no one believed them. Shiragiku has seen many, many apocalypses, but she has never been hurt by any one after the first. Shiragiku has remembered every single end; Shirayuri has remembered none; and Hanashiro only remembers some. Which? Even he doesn't know.
-                  <br> 
-                  <br>
-                  These three are the only ones with the ability to understand each other in their native, long-lost fairy tongue. But just because they have the potential does not mean they have the means. Who will Hanashiro trust in this cycle? Who can she trust? Someone who remembers everything, or someone who remembers nothing at all?
-                  <br><br>
-                  Pick who Hanashiro allies themselves with in this turn of the cycle. May the gods have mercy on these Amayuri.
-                  <br>
-                </abc></p>
+          <div id="teardew"> <div class="row">
+                  <div class="column">
+                    <h1>THE TEARDEW KINGDOM OF HEAVEN</h1>
+                    <!-- Actual copy -->
+                    <abc href="teardew">
+                    <p>In the teardew kingdom of heaven,
+                    <br>there was more, there was more.
+                    <br><br>
+                    There were more of us then than four.
+                    <br>I, Hanashiro, and then Shiragiku, <br>Shirayuri, and…and he.
+                    <br><br>
+                    Whose name I wish remained unknown to me.
+                    <br><br>Who remembers?
+                  </p>
+                </div>
               </div>
-
-              <!-- Container for Destinations part of banner -->
-
-          <!--************************************* -->
-          <!--**** Container for Cruises data ***** -->
-          <!--************************************* -->
-          <div id="characters">
-              <h1>CHARACTERS</h1>
-            <table>
-              <tr><td style=""><img src="https://github.com/feyxuan/OCHITSUBAKI/blob/main/hanashiro-retro.png?raw=true" style="float: left; padding: 5%";>
-                  <br><br>【花白】Hanashiro (White flowers):
-                  <br> <br> <i> A selection from THE BITTERWILD CANTOS: SEPTUM </i>
-                  <br> <br> <b> DO NOT TRUST
-                  <br> those who say they will live forever,
-                  <br> only those who remember.</b>
-                  <br><br><br>
-                </td>
-                <td><img src="https://github.com/feyxuan/OCHITSUBAKI/blob/main/lk-retro.png?raw=true" style="float:left; padding: 5%";>
-                <br><br>【ルン・胡蝶蘭】Lun Kochouran (Lune Moth Orchid):
-                <br> <br> <i> A selection from THE BITTERWILD CANTOS: DUO </i>
-                <br> <br> <b> DEERSKIN SLANDER
-                <br> With your deerskin gloves,
-                <br> love, with your deerskin gloves,
-                <br> remember those who will not for us
-                <br> have any remembering of. </b>
-              </td>
-              </tr>
-              <tr>
-                <td><img src="https://github.com/feyxuan/OCHITSUBAKI/blob/main/win-oops-logo.png?raw=true" style="float:left; padding: 5%";>
-                <br><br>【白菊】Shiragiku (White chrysanthemum):
-                <br> <br> <i> A selection from THE BITTERWILD CANTOS: TRES </i>
-                <br><br> <b> A lady that sires,
-                <br> A lady undenied,
-                <br> Who keeps the time.
-                <br><br>
-                <br> And keeps us all in line.
-                <br> And keeps us all in line.
-              </b>
-                </td>
-                <td><img src="https://github.com/feyxuan/OCHITSUBAKI/blob/main/win-oops-logo.png?raw=true" style="float:left; padding: 5%";>
-                <br><br>【白百合】Shirayuri (White lily):
-                <br> <br> <i> A selection from THE BITTERWILD CANTOS: DUO </i>
-                <br><br><b> Remember the birds:
-                <br>SWALLOW, SWAN, SHRIKE,
-                <br><br>
-                <br> Tonight, tonight
-                <br> Never forget, for they will
-                <br> remember you.
-                </td>
-              </tr>
-            </table>
-
-      </div>
-          <div id="gamedev">
-              <h1>GAMEDEV</h1>
-              <!-- Navigation buttons for three cruises using tabbed panels -->
-              <nav>
-                  <h2>MENU</h2>
-                  <a href="#twine">TWINE</a>
-                  <a href="#poster">POSTER</a>
-                  <a href="#logo">LOGO</a>
-              </nav>
-              <!-- TWINE -->
-              <div id="twine">
-                  <h2>TWINE</h2>
-                  <div class="w3-container">
-                      <!-- Filler text -->
-                      <div>
-                            <img src="https://github.com/feyxuan/OCHITSUBAKI/blob/main/jpntwine.PNG?raw=true" style="width: 70%; height:70%;">
-                      </div>
-                  </div>
-              </div>
-               <!-- POSTER -->
-              <div id="poster">
-                  <h2>VN AESTHETIC CONCEPT POSTER</h2>
-                  <div>
-                      <div>
-                          <!-- Filler text -->
-                         <img src="https://github.com/feyxuan/OCHITSUBAKI/blob/main/ochi-wip.png?raw=true">
-                      </div>
-                  </div>
-              </div>
-               <!-- LOGO -->
-              <div id="logo">
-                  <h2>LOGO</h2>
-                  <div>
-                      <div>
-                         <img src="https://github.com/feyxuan/OCHITSUBAKI/blob/main/win-oops-logo.png?raw=true">
-                      </div>
+                <div class="row"><div class="column">
+                    <h1>I WAS ONCE GOD-FAVORED</h1>
+                    <abc href="god-favor">
+                    <p>But the gods do not savor
+                    <br>speaking of unsavory topics
+                    <br><br>Such what happens to a child
+                    <br>of a goddess
+                    <br><br>That she forgot to bless
+                    <br>and instead left abandoned, lest
+                    <br>someone find him, and on a whim
+                    <br><br>Take him home, and keep him
+                    <br>til he's grown, or try to,
+                    <br><br>And then when the gods deny you,
+                    <br>Mother Emperor,
+                    <br><br>You leave me all alone with <i>him</i>
+                    <br><br>And scapegoat the rest of us,
+                    <br>who become the last of the Amayuri,
+                    <br>these LILIES OF HEAVEN, cut off
+                    <br>from all our brethren,
+                    <br><br>Three birds and a rabbit.
+                    <br>And when you tell a rabbit
+                    <br>he can have it,
+                    <br><br>What is stopping him anymore?
+                    <br><br>Who remembers?
+                    <br><br>I don't, anymore.
+                  </abc></p>
                   </div>
               </div>
 
-          </div>
-    </text>
 
     <!--********************************-->
     <!--**** Container for Footer ***** -->
