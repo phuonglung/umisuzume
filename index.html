@@ -42,7 +42,7 @@ h2 {
 }
 html,body {
 
-  background-image: url('https://github.com/feyxuan/swayofseven/blob/main/bg-long.png?raw=true');
+  background-image: url('images/bg-long.png');
   background-repeat: repeat;
   font-size: 14pt;
   font-family: 'Shippori Mincho', serif;
@@ -159,14 +159,20 @@ abc {
   width: 100%;
 }
 
+.tri {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 77px;
+  height: 67px;
+}
+
 .flex-container {
   display: flex;
-  flex-direction: column;
-
+  flex-direction: row;
 }
 
 .flex-container > div {
-  background-color: rgba(255, 255, 255, 0.5);
   margin: 5px;
   font-size: 20px;
 }
@@ -186,6 +192,9 @@ abc {
     width:95%;
     height:95%;
   }
+  .flex-container {
+    flex-direction: column;
+  }
 }
 
 
@@ -197,10 +206,15 @@ abc {
 
 
     <!--******************-->
+
+
+    <!--.menu {cursor: pointer;}-->
+
+
     <!-- Header container -->
     <!--******************-->
     <div class=col-2><header>
-        <img src="https://raw.githubusercontent.com/feyxuan/swayofseven/main/GOLDEN-HEADER.png" alt="ochitsubaki" class="center">
+        <img src="images/GOLDEN-HEADER.png" alt="ochitsubaki" class="center">
     </header>
     </div>
 
@@ -211,14 +225,14 @@ abc {
       <nav style="display:none" id="mySidebar">
           <h2>MENU</h2>
           <button onclick="w3_close()">CLOSE</button>
-          <a href="#teardew">POEMS</a>
+          <a href="url">cantos-poems-layout.html</a>POEMS</a>
       </nav>
 
       <!--*************************************-->
       <!-- Main container for all site content -->
       <!--*************************************-->
       <div id="main"> <div class="menu-icons">
-                <p id ="start" onclick="w3_open()">&#9947; </p>
+                <p id ="start" onclick="w3_open()"><img src="images/tri.png" class="tri"> </p>
 
 
           <!--************************************************************* -->
@@ -226,44 +240,17 @@ abc {
           <!--************************************************************* -->
           <div class=col-1> <div id="#teardew"> <div class="flex-container">
                 <div>
-                    <h1>THE TEARDEW KINGDOM OF HEAVEN</h1>
-                    <!-- Actual copy -->
-                    <abc href="teardew">
-                    <p>In the teardew kingdom of heaven,
-                    <br>there was more, there was more.
-                    <br><br>
-                    There were more of us then than four.
-                    <br>I, Hanashiro, and then Shiragiku, <br>Shirayuri, and…and he.
-                    <br><br>
-                    Whose name I wish remained unknown to me.
-                    <br><br>Who remembers?
-                  </p>
+                    <h1>WHO</h1>
+                    <img src="https://raw.githubusercontent.com/feyxuan/swayofseven/main/PORTRAIT.png" class="center">
                 </div>
                 <div>
-                    <h1>I WAS ONCE GOD-FAVORED</h1>
-                    <abc href="god-favor">
-                    <p>But the gods do not savor
-                    <br>speaking of unsavory topics
-                    <br><br>Such what happens to a child
-                    <br>of a goddess
-                    <br><br>That she forgot to bless
-                    <br>and instead left abandoned, lest
-                    <br>someone find him, and on a whim
-                    <br><br>Take him home, and keep him
-                    <br>til he's grown, or try to,
-                    <br><br>And then when the gods deny you,
-                    <br>Mother Emperor,
-                    <br><br>You leave me all alone with <i>him</i>
-                    <br><br>And scapegoat the rest of us,
-                    <br>who become the last of the Amayuri,
-                    <br>these LILIES OF HEAVEN, cut off
-                    <br>from all our brethren,
-                    <br><br>Three birds and a rabbit.
-                    <br>And when you tell a rabbit
-                    <br>he can have it,
-                    <br><br>What is stopping him anymore?
-                    <br><br>Who remembers?
-                    <br><br>I don't, anymore.
+                    <h1>REMEMBERS?</h1>
+                    <abc href="remembers">
+                    <p>Are you here now, or have you been here before?
+                    <br><br>Beyond the door,
+                    <br>what's in store?
+                    <br><br>Are you here now, or have you been here before?
+                    <br><br>
                   </abc></p>
                 </div>
               </div>
